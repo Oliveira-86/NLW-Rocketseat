@@ -1,0 +1,54 @@
+/* Reponsive, ou responsividade, é fazer com que sua aplicação se adpte a diversos tipos de tela*/
+
+
+@media(max-width: 900px){ /* É uma propriedade css: um conjunto de regras que podem configuradas pelo css*/
+    #page-home{
+        background-position-x: 70vw; /* Uma regra especifica para o tamanho no eixo x da figura*/
+    }
+    #page-home .content{ /*regra especifica para alinha os textos*/
+        align-items: center;
+        text-align: center;
+    }
+    #page-home header a{
+        position: absolute;/* Cria uma "folha de papel" acima do outro*/
+        bottom: 48px;
+        
+        left: 100px;
+        transform: translateX(25%);
+        
+    }
+    #page-home main{
+        align-items: center;
+    }
+
+    #page-search-results .cards{
+        grid-template-columns: 1fr; /* Ao diminuir a tela o padrao se torna coluna*/
+    }
+    #page-search-results .cards img{
+        height: 230px;
+    }
+
+    #page-create-point .field-group{
+        flex-direction: column;
+    }
+
+    #page-create-point .field-group .field + .field{
+        margin-left: 0;
+    }
+
+}
+
+
+@media (min-width: 1700px){
+    #page-home{
+        background-position-x: 40vw;
+    }
+}
+
+@media (max-height: 760px){
+    #page-home{
+        background-position-y: 200px;
+    }
+}
+
+

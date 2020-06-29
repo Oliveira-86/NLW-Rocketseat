@@ -1,0 +1,192 @@
+#page-create-point{
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto; /*alinhamento de caixa (pelo lado de fora da caixa)*/
+}
+
+#page-create-point header{
+    margin-top: 48px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-create-point header a{
+    color: #322153;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+}
+
+#page-create-point header a span{
+    margin-right: 16px;
+    background-image: url('../icones/arrow-left.svg');
+
+    display: flex;
+
+    width: 20px;
+    height: 20px;
+
+}
+
+form{
+    background-color: white;
+    margin: 80px auto;
+    
+
+    
+    padding: 64px; /* Reponsável pelo preenchimento interno da caixa(block)*/
+
+    border-radius: 8px;
+
+    max-width: 730px;/* limite máx da largura*/
+}
+
+form h1{
+    font-size: 36px;
+    color: #322153 ;
+}
+
+form fieldset{
+    margin-top: 64px;
+
+    border: 0;
+}
+
+form legend{
+    margin-bottom: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+form legend h2{
+    font-size: 24px;
+    color: #322153 ;
+
+}
+
+form legend span{
+    font-size: 14px;
+    color: #322153;
+}
+
+form .field{
+    flex: 1; /* preenche toda a caixa*/
+    display: flex;
+    flex-direction: column;/* Define que o field fique em coluna*/
+    margin-top: 24px;
+    color: #322153 ;
+}
+
+form .field-group{
+    display: flex; /*vai deixa alinhado*/
+    color: #322153 ;
+}
+
+form input, form select{
+    background-color: #f0f0f0f5;
+
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+
+    border-radius: 8px;
+
+    outline: none; /*tira a linha das bordas do input*/
+
+
+}
+
+form select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form label{
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+
+form .field-group .field + .field{
+    margin-left: 24px;
+}
+
+form button{
+    width: 260px;
+    height: 56px;
+
+    background-color: #34cb79;
+    border-radius: 8px;
+
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+
+    border: 0;
+    
+    margin-top: 40px;
+
+    transition: background-color 400ms ;
+}
+
+form button:hover{ /* quando o mouse passar por cima do botao vai mudar de cor*/
+    background-color:#2fb86e;
+
+}
+.itens-grid {
+    display: grid; /* O display grid é multi dimensional, podendo ser arranjado em linhas e colunas*/
+    grid-template-columns: 1fr 1fr 1fr; /* Unidade de fração, mas pode ser usado com px tbm*/
+    gap: 16px; /* Forma uma margem em todo entre as figuras, ou os <li>*/
+
+}
+
+.itens-grid li{
+    background-color: #f5f5f5;
+    list-style: none;
+
+    border: 2px solid #f5f5f5;
+    border-radius: 8px;
+
+    height: 180px;
+
+    padding: 32px 24px 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    text-align: center;
+
+    cursor: pointer; /* Deixa o mause com uma mãozinha*/
+}
+
+.itens-grid li span{
+    margin-top: 12px;
+
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+
+    color: #322153;
+
+}
+
+.itens-grid li.selected { /* ponto junto representa que o selected está dentro do <li>*/
+    background: #aae4c3
+    border 2px solid #34cb79
+
+}
+
+
+    
+

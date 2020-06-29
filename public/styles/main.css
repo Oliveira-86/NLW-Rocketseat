@@ -1,0 +1,35 @@
+:root{
+     --title-color: #322153
+     --primary-color: #34cb79
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/* determina que a largura vaia té no máx a borda*/
+
+}
+html{
+    font-family: 'ubuntu', sans-serif;
+}
+body{
+    background-color: #f0f0f5;
+    -webkit-font-smoothing: antialiase;
+}
+h1, h2, h3, h4, h5, h6{
+    color: var(--title-color);
+    font-family: 'Ubuntu', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+/* BOX MODEL
+Modelo de caixa
+toda caixa tem
+largura, altura, espaçamento, preenchimento, bordas
+cor, fundo, maneira que é vistra pelo html(display)
+posicionamento, alinhamentos,
+*/
+
+
+

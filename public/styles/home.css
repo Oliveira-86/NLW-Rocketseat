@@ -1,0 +1,109 @@
+#page-home {
+    height: 100vh; /*vh é o tamanho de toda a tela*/
+    background: url('../icones/home-background.svg') no-repeat ;
+    background-position: 35vw bottom;
+}
+
+#page-home .content {
+    width: 90%; /* Porcentagem a largura se movimenta de acordo com o tamanho da pág, Pixel mantem constante.*/
+    max-width: 1100px; /* delimita a variação da largura.*/
+    height: 100%;
+    
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#page-home header{
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#page-home header a{
+    display: flex;
+    color: var(--title-color);
+    font-weight: 700;
+}
+#page-home header a span{
+    margin-right: 16px;
+    display: flex;
+    background-image: url('../icones/log-in.svg');
+    width: 20px;
+    height: 20px;
+}
+
+#page-home main{
+    max-width: 560px;
+  
+    
+    flex: 1; /*preenche toda a largura da caixa, 100%, ajuda a cetralizar o texto*/
+
+    display: flex;/*movimenta do eixo y*/
+    flex-direction: column;/*movimenta do eixo y*/
+    justify-content: center; /*movimenta do eixo y* e centraliza*/
+
+
+}
+#page-home main h1{
+    
+    font-size: 54px;
+}
+#page-home main p {
+    font-size: 24px;
+    line-height: 38px; /*altura do espaçamento de textos*/
+    margin-top: 16px;
+}
+
+#page-home main a{
+     width: 100%;
+     max-width: 360px;
+     height: 72px;
+     
+     border-radius: 8px;
+
+     display: flex;
+     align-items: center;
+
+     margin-top: 40px;
+     
+     background-color: #34cb79;
+
+     transition: 400ms; /* tempo de transmissao para aparição da cor, mas pode ser pra qlqr função*/
+
+    font-weight: bold;
+    color: white;
+
+    }
+
+#page-home main a:hover{ /*quanto mouse passar em cima muda de cor*/
+    background-color: #2fb86e;
+}
+#page-home main a span{
+    width: 72px;
+    height: 72px;
+
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+
+    background-color:#2fb86e;
+
+    display: flex;
+    align-items: center;
+    justify-content: center; /*para poder aparecer a imagem no span, centralizado*/
+}
+#page-home main a span::after{/*podemos criar elementos no css dentro do span*/
+    content: "";
+    background-image: url('../icones/search.svg');
+
+    width: 20px;
+    height: 20px;
+
+} 
+#page-home main a strong{ /*criar uma nova caixa dentro do "a" para pode alterar sua posição*/
+    flex: 1;
+    color: #f0f0f5;
+    text-align: center;
+}

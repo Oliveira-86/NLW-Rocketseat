@@ -1,0 +1,41 @@
+{% extends "layout.html" %}  <!-- Vai pegar tudo que foi cirado no layout.html e usar no index.html --> 
+
+{% set pageId = "page-home" %}
+
+
+{% block styles %}
+    <link rel="stylessheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/modal.css"> 
+{% endblock styles %}
+
+{% block content %}
+<div class="content"> <!--classificacao do elemento--> 
+    <header>  
+        <img src="/icones/logo.svg" alt="Logomarca" > <!-- src onde está a imagem,.alt serve para acessibilidade, tipo leitor-->
+        <a href="/create-point">
+                <span></span> 
+                Cadastre um ponto de coleta
+        </a>
+    </header>
+    <main>
+        <h1>Seu marketplace de coleta de resíduos hoje</h1>
+
+        <p>Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente.</p>
+    
+        <a href="#"><span></span><strong>Pesquisar pontos de coleta</strong> </a>   
+    </main>
+</div>
+{% endblock content %}
+
+{% block modal %}
+ {% include "partials/modal.html" %}
+{% endblock modal %}
+ 
+{% block scripts %}
+    <script src="/script/index.js"></script>
+{% endblock scripts %}
+
+    
+    
+
+    
